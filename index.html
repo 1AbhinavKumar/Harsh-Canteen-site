@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- charset is given for so that whatever language we are using is supported in all browser  -->
+
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    <!-- this line is used for setting aspect ratio for different devices -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- this line is for old browser comptability -->
+
+    <title>Online delivery service harsh canteen <harshcanteen class="com"></title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- link are self closing tags -->
+    <link rel="stylesheet" media="screen and (max-width:1251px)" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Sofia+Sans+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="navbar">  
+        <!-- same id cannot be used mulitple times but same class can be used  -->
+        <!-- The <nav> tag defines a set of navigation links and to give uniqueness to element we use id  -->
+            <div id="logo">
+                <img src="css/imgs/logo.png" alt="logo">
+                <!-- here alt is used in case if the photo is not able to get load then that text will appear.-->
+            </div>
+
+            <ul>
+                <li class="items"><a href="#"> Home </a></li>
+                <li class="items"><a href="#"> Services </a></li>
+                <li class="items"><a href="#"> About us </a></li>
+                <li class="items"><a href="#"> Contact us </a></li>
+                <!-- href transfer us to the link when will click on the button . if used "#" then it will not do anything -->
+                <!-- The <a> tag defines a hyperlink, which is used to link from one page to another. -->
+            </ul>
+    </nav>
+
+
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to harshcanteen.com</h1>
+
+        <p>Lorem ipsum, dolor sit amet consectetur </p>
+
+        <p>
+            Lorem, ipsum dolor  
+        </p>
+
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="service container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">        
+            <!-- emmet when we use id is like div#services and when we use class like div.box -->
+            <div class="box">
+                <img src="css/imgs/snacks.jpg" alt="snacks" >
+                <h2 class="h-secondary center">Snacks</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae in eligendi eum nam eius eaque reprehenderit nisi rem voluptatibus voluptate commodi molestiae, quo vero. Non a voluptatem facere ab.</p>
+            </div>      
+            <div class="box">
+                <img src="css/imgs/maincourse.png" alt="" >
+                <h2 class="h-secondary center">Maincourse</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae in eligendi eum nam eius eaque reprehenderit nisi rem voluptatibus voluptate commodi molestiae, quo vero. Non a voluptatem facere ab.</p>
+            </div>      
+            <div class="box">
+                <img src="css/imgs/packaged food items.jpg" alt="" >
+                <h2 class="h-secondary center">Packed items ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae in eligendi eum nam eius eaque reprehenderit nisi rem voluptatibus voluptate commodi molestiae, quo vero. Non a voluptatem facere ab.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Client</h1>
+        <div id="client">
+            <div class="clientitems">
+                <img src="css/imgs/yippeelogo.jpg" alt="Our client">
+            </div>
+            <div class="clientitems">
+                <img src="css/imgs/logopepsi.jpg" alt="Our client">
+            </div>
+            <div class="clientitems">
+                <img src="css/imgs/maggi logo.jpg" alt="Our client">
+            </div>
+            <div class="clientitems">
+                <img src="css/imgs/kurkure logo.jpg" alt="Our client">
+            </div>
+        </div> 
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contactbox">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone-number:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="center">
+        Copyright &copy;www.harshcanteen.com. All right resereved!
+    </footer>
+
+</body>
+
+</html>

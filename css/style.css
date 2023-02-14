@@ -1,0 +1,272 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    /* margin is the dist. for outside content to screen sides */
+    padding: 0;
+    /* whereas padding is the dist of inner content from its own boundary  */
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height: 5px;
+}
+
+/* Navigation bar */
+#navbar{
+    /* here #navbar that is id to access the whole nav section   */
+
+    display: flex;
+    /* flex is used to allign the items horizontally */
+
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 92px;
+    /* here align items will allign all the item wrt to their center for example here logo and unordered list  */
+
+    /* justify-content: center; */
+    /* justify content to allign the items in the center of the page  */
+}
+
+
+#navbar::before{    /* if we keep the gap in between navbar and before it will give gradient colour and not work properly */
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;   /* this moves the background 1 layer below */
+    opacity:0.4;
+}
+
+/* Navigation bar: logo and image */
+
+
+#logo{
+    /* height: 69px; */
+    margin: 32px 34px;
+}
+
+#logo img{
+    /* to access the img first access the id  */
+    margin: 34px 40px;
+    height: 69px;
+}
+
+
+/* Navigation bar: list styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+
+#navbar ul li{
+
+    list-style: none; 
+    /* by setting list-style to none basically it removes the dots of ul */
+
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    /* text-decoration to none basically removes the underlying line in the links */
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 436px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: '';
+    background-image: url('../css/imgs/bg1.jpg'); /*  while using url ../ to move out of the folder here css to access the file bg1.jpg */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    position: absolute; 
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 72%;
+    z-index: -1;   
+    opacity:0.9;
+}
+
+#home h1{
+    color: white;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid black;
+    padding: 32px;
+    margin: 14px 6px;
+    border-radius: 28px;
+    background: rgb(224, 221, 221);
+}
+
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    /* in order to margin auto to work you have to block the display and give some height or other parameter */
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client section */
+
+#client-section {
+    height: 344px;
+    position:relative;
+}
+
+#client-section::before{
+    content: '';
+    position: absolute;
+    background-image: url(../css/imgs/bg.jpg);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+
+}
+
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientitems{
+    padding: 34px;
+}
+
+#client img{
+    height: 160px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    background:url(../css/imgs/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contactbox{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contactbox form{
+    width: 40%;
+}
+
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+
+
+.h-primary{
+    /* by adding class in h1 we can add same type of heading many places it helps in styling  */
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+/* in class while defining css we use . instead of # */
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+
+.btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    padding: 6px 20px; 
+    /* here in padding 6px is for top and bottom and 20 px for left and right  */
+    margin:15px;
+    cursor: pointer;
+    /* cursor basically changes the pointer sign. whenever you hover on the button  */
+}
+
+.center{
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+/* Navigation bar */
+#navbar{
+    flex-direction: column;
+    height: 34px;
+}
+#logo img{
+    margin: 34px 40px;
+    
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+
+/* Home section */
+#home{
+    height:324px;
+    padding: 36px 25px;
+}
+
+#logo{
+    size: 34px;
+}
+
+#home::before{
+    height: 430px;
+}
+
+
+
+#home p{
+    font-size: 13px;
+}
+
+#services{
+    flex-direction: column;
+    /* this has sorted the boxes in a column when the dimensions are reduced  */
+}
+
+#clients{
+    overflow: hidden;
+}
+
+
+/* Utility class */
+.h-primary{
+    font-size: 33px;
+}
