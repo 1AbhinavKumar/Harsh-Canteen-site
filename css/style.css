@@ -1,11 +1,12 @@
-/* CSS Reset */
 
+/* CSS Reset */
 *{
     margin: 0;
     /* margin is the dist. for outside content to screen sides */
     padding: 0;
     /* whereas padding is the dist of inner content from its own boundary  */
 }
+/* "*" sign is that setting is applied all over the css sheet  */
 
 /* CSS variables */
 
